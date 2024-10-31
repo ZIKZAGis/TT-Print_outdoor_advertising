@@ -1,0 +1,42 @@
+@import './variables.scss';
+
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: white;
+
+    > main {
+        flex-grow: 1;
+        background-color: $main-orange;
+        text-align: center;
+    }
+
+    > header,
+    > footer {
+        background-color: $main-blue;
+        text-align: center;
+        line-height: 50px;
+    }
+}
+
+.App_container {
+    max-width: 1280px;
+    margin: 0 auto;
+    outline: 1px solid black;
+    outline-offset: -1px;
+}
+
+@media (max-width: 1024px) {
+    .App_container {
+        max-width: 960px;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .App_container {
+        max-width: 100%;
+        padding: 15px;
+    }
+}

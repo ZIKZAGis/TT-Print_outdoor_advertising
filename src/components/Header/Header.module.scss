@@ -1,0 +1,18 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    > nav {
+        width: 100%;
+    }
+}
+
+.logo {
+    color: red;
+    margin-right: 100px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+}

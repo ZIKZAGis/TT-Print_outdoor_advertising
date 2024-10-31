@@ -1,4 +1,7 @@
 import styles from "./Header.module.scss";
+import { SiMaildotru } from "react-icons/si";
+import { FaPhoneAlt } from "react-icons/fa";
+
 
 const Header = () => {
     return (
@@ -20,10 +23,22 @@ const Header = () => {
                     <li>
                         <a href="#">Контакты</a>
                     </li>
-                    <li>
-                        <a href="tel:+79994443322">+79994443322</a>
-                    </li>
                 </ul>
+                <ul className={styles.list_contacts}>
+                    <li>
+                        <a href="mailto:mail@mail.ru">
+                            <SiMaildotru/>
+                            <p>mail@mail.ru</p>
+                        </a>
+                    </li>
+                    <li>
+                        
+                        <a href="tel:+79994443322">
+                            <FaPhoneAlt/>
+                            <p>+79994443322</p>
+                        </a>
+                    </li>
+                </ul>                
             </nav>
         </div>
     )

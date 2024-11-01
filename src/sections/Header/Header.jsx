@@ -16,7 +16,7 @@ const Header = () => {
     }
 
     return (
-        <div className={styles.wrapper}>
+        <div className={`${styles.wrapper} App_container`}>
             <div className={styles.logo}>
                 Logo
             </div>

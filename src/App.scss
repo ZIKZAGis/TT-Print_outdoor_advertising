@@ -7,8 +7,9 @@
     color: white;
 
     > main {
+        padding-top: 71px;
         flex-grow: 1;
-        background-color: $main-orange;
+        background-color: white;
         text-align: center;
     }
 
@@ -22,7 +23,7 @@
 
 .App_header {
     position: fixed;
-    width: 100%;
+    width: 100vw;
 }
 
 .App_container {
@@ -32,6 +33,10 @@
 }
 
 @media (max-width: $tablet) {
+    .App > main {
+        padding-top: 51px;
+    }
+
     .App_container {
         max-width: 960px;
     }

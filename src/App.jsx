@@ -5,7 +5,7 @@ import './App.scss';
 function App() {
   return (
     <div className="App">
-      <header>
+      <header className='App_header'>
         <div className='App_container'>
           <Header/>
         </div>

@@ -21,6 +21,10 @@
     align-items: center;
 }
 
+.burger_btn {
+    display: none;
+}
+
 .list {
     width: 100%;
     display: flex;
@@ -70,6 +74,36 @@
 }
 
 @media (max-width: $tablet) {
+    .wrapper > nav {
+        width: auto;
+    }
+
+    .list {
+        display: block;
+        position: absolute;
+        text-align: center;
+        height: fit-content;
+        width: 100%;
+        right: -100%;
+        top: 50px;
+        transition: $animation;
+
+        > li {
+            width: 100%;
+
+            a {
+                width: 100%;
+            }
+        }
+    }
+
+    .list_open {
+        right: 0;
+        top: 50px;
+        background-color: $main-blue;
+    }
+
+
     .list_contacts {
         a p {
             display: none;
@@ -79,10 +113,70 @@
             margin-right: 0;
         }
     }
+
+    .burger_btn {
+        display: flex;
+        align-items: center;
+        position: relative;
+        order: 3;
+        padding: 10px;
+        line-height: normal;
+
+        div {
+            display: flex;
+            align-items: center;
+            position: relative;
+            height: 20px;
+            width: 25px;
+
+            &::before,
+            &::after {
+                display: block;
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 2px;
+                background-color: white;
+                transition: $animation;
+            }
+
+            &::before {
+                top: 0;
+            }
+
+            &::after {
+                bottom: 0;
+            }
+
+            span {
+                display: block;
+                background-color: white;
+                width: 100%;
+                height: 2px;
+                opacity: 1;
+                transition: $animation;
+            }
+        }
+    }
 }
 
-// @media (max-width: $mobile) {
-//     .list {
-//         display: none;
-//     }
-// }
+.burger_btn_open {
+    div {
+        &::before {
+            top: 50%;
+            transform: rotate(45deg);
+            background-color: $main-orange;
+        }
+
+        &::after {
+            bottom: 42%;
+            transform: rotate(-45deg);
+            background-color: $main-orange;
+        }
+
+        span {
+            transform: rotate(-45deg);
+            opacity: 0;
+        }
+    }
+}

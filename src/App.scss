@@ -20,6 +20,11 @@
     }
 }
 
+.App_header {
+    position: fixed;
+    width: 100%;
+}
+
 .App_container {
     max-width: $desktop;
     min-width: 320px;

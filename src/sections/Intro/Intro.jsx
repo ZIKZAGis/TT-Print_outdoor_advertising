@@ -1,3 +1,4 @@
+import AnimatedBackground from '../../components/AnimatedBackground/AnimatedBackground'
 import styles from './Intro.module.scss'
 
 const Intro = () => {
@@ -26,6 +27,7 @@ const Intro = () => {
                     <button>Заказать рекламу</button>
                 </div>
             </div>
+            <AnimatedBackground/>
         </div>
     )
 }

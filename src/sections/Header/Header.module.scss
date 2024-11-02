@@ -24,6 +24,15 @@
 
 .burger_btn {
     display: none;
+    cursor: pointer;
+
+    &:hover {
+        & div::before,
+        & div::after,
+        span {
+            background-color: $main-orange;
+        }
+    }
 }
 
 .list {

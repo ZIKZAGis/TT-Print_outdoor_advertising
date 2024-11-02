@@ -1,11 +1,14 @@
 @import './../../variables.scss';
 
 .intro {
+    position: relative;
     background-color: $main-blue;
 }
 
 .intro_wrapper {
     display: grid;
+    position: relative;
+    z-index: 2;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
     padding: 120px 15px;
@@ -72,7 +75,7 @@
 
 .intro_order_block {
     background-color: darken($main-blue, 10%);
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 40px;
     height: fit-content;
 
@@ -89,11 +92,18 @@
     button {
         padding: 15px;
         border: none;
-        border-radius: 10px;
+        border-radius: 5px;
         background-color: $bt_red;
         color: white;
         font-size: 18px;
+        font-weight: bold;
         text-transform: uppercase;
+        cursor: pointer;
+        transition: $animation;
+
+        &:hover {
+            background-color: darken($bt_red, 20%);
+        }
     }
 }
 
@@ -134,11 +144,11 @@
         }
 
         > p:last-child {
-            font-size: clamp(11px, 3vw, 24px);
+            font-size: clamp(11px, 3.5vw, 24px);
         }
     
         h1 {
-            font-size: clamp(28px, 5.5vw, 62px);
+            font-size: clamp(28px, 6vw, 62px);
             line-height: 40px;
             margin-bottom: 15px;
         }
@@ -153,8 +163,7 @@
     }
 
     .intro_static {
-        // font-size: 14px;
-        font-size: clamp(14px, 4vw, 32px);
+        font-size: clamp(14px, 4.5vw, 32px);
         margin-bottom: 10px;
     }
     
@@ -162,8 +171,7 @@
         margin-left: 2px;
     
         .type {
-            font-size: clamp(14px, 4vw, 32px);
-            // font-size: 14px;
+            font-size: clamp(14px, 4.5vw, 32px);
             padding-left: 2px;
         }
     }

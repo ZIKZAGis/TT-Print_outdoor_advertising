@@ -1,7 +1,8 @@
 // import logo from './logo.svg';
+import './App.scss';
 import Header from './sections/Header/Header';
 import Intro from './sections/Intro/Intro';
-import './App.scss';
+import OurServices from './sections/OurServices/OurServices';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       </header>
       <main>
         <Intro/>
+        <OurServices/>
       </main>
       <footer>
         <div className='App_container'>

@@ -1,0 +1,46 @@
+@import './../../variables.scss';
+
+.our_services {
+    padding: 15px;
+}
+
+.headline {
+    font-size: 42px;
+    color: $main-blue;
+    margin: 20px 0;
+}
+
+.services_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    li {
+        position: relative;
+        border-radius: 5px;
+        min-height: 250px;
+        background-color: $bt_red;
+        padding: 20px;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: auto;
+        }
+
+        p {
+            text-align: left;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: $main-blue;
+            font-weight: bold;
+        }
+    }
+}

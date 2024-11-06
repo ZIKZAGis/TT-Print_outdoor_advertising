@@ -7,7 +7,8 @@
 .headline {
     font-size: 42px;
     color: $main-blue;
-    margin: 20px 0;
+    margin: 20px 0 30px;
+    text-transform: uppercase;
 }
 
 .services_list {
@@ -28,11 +29,13 @@
             left: 0;
             top: 0;
             width: 100%;
-            height: auto;
+            min-height: 250px;
+            object-fit: cover;
         }
 
         p {
             text-align: left;
+            font-size: 18px;
             position: absolute;
             left: 0;
             bottom: 0;
@@ -41,6 +44,41 @@
             padding: 15px;
             background-color: $main-blue;
             font-weight: bold;
+        }
+    }
+}
+
+@media (max-width: $tablet) {
+    .headline {
+        font-size: clamp(24px, 4vw, 36px);
+    }
+
+    .services_list {
+        grid-template-columns: repeat(2, 1fr);
+
+        li p {
+            font-size: clamp(12px, 2.5vw, 18px);
+        }
+    }
+}
+
+@media (max-width: $mobile) {
+    .headline {
+        margin: 15px 0 20px;
+        font-size: clamp(20px, 4vw, 24px);
+    }
+
+    .services_list {
+        max-width: 600px;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+
+        li {
+            min-height: 300px;
+            
+            p {
+                font-size: clamp(16px, 2.5vw, 28px);
+            }
         }
     }
 }

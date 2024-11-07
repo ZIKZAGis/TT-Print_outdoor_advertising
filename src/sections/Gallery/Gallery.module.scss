@@ -1,0 +1,53 @@
+@import 'src/variables.scss';
+
+.gallery {
+    position: relative;
+    background-color: $main-blue;
+    overflow: hidden;
+}
+
+.gallery_wrapper {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    z-index: 4;
+    padding: 20px;
+}
+
+.gallery_text {
+    position: relative;
+    height: auto;
+    width: 100%;
+
+    p {
+        width: 250px;
+        font-size: 32px;
+        font-weight: 500;
+        color: lighten($main-blue, 20%);
+        position: absolute;
+        text-align: left;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.gallery_slider {
+    h2 {
+        font-size: 42px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    ul {
+        display: flex;
+        overflow: hidden;
+
+        li {
+            min-width: 100%;
+            height: 400px;
+            background: #fff no-repeat center center / cover;
+        }
+    }
+}

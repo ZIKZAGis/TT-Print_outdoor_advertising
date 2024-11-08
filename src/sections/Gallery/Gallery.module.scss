@@ -34,15 +34,53 @@
 }
 
 .gallery_slider {
+    max-width: 800px;
     h2 {
         font-size: 42px;
         margin-bottom: 20px;
         text-transform: uppercase;
     }
 
+    .scroll_container {
+        position: relative;
+
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $bt_red;
+            cursor: pointer;
+            position: absolute;
+            font-size: 32px;
+            height: 50px;
+            border-radius: 50%;
+            width: 50px;
+            padding: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .arrow_right {
+            right: 10px;
+        }
+
+        .arrow_left {
+            left: 10px;
+        }
+    }
+
     ul {
+        width: 100%;
         display: flex;
-        overflow: hidden;
+
+        
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
 
         li {
             min-width: 100%;

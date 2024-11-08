@@ -1,5 +1,8 @@
+import { useEffect, useState } from 'react';
 import AnimatedBackground from '../../components/AnimatedBackground/AnimatedBackground'
 import styles from './Gallery.module.scss'
+import { IoMdArrowRoundBack } from "react-icons/io";
+import { IoMdArrowRoundForward } from "react-icons/io";
 
 const images_links = [
     'https://www.nwgs.ru/upload/iblock/244/2441acef1d37ea03c87ccbd4d081a071.jpg',
@@ -22,6 +25,26 @@ const images_links = [
 
 
 const Gallery = () => {
+    const [scrollSize, setScrollSize] = useState(null)
+
+    useEffect(() => {
+        const scroll = document.getElementById('scroll')
+        const leftBtn = document.getElementById('left')
+        const rightBtn = document.getElementById('right')
+
+        setScrollSize(document.getElementById('scroll_block').offsetWidth)
+
+        if (scroll && leftBtn && rightBtn) {
+            leftBtn.addEventListener('click', () => {
+                scroll.scrollLeft -= scrollSize
+            })
+            rightBtn.addEventListener('click', () => {
+                scroll.scrollLeft += scrollSize
+            })
+        }
+    }, [scrollSize])
+
+
     return (
         <div className={styles.gallery}>
             <AnimatedBackground/>
@@ -29,16 +52,22 @@ const Gallery = () => {
                 <div className={styles.gallery_text}>
                     <p>Более 1000 лет изготавливаем наружную рекламу</p>
                 </div>
-                <div className={styles.gallery_slider}>
+                <div className={styles.gallery_slider} id='scroll_block'>
                     <h2>Наши работы</h2>
-                    <div>
-                        <ul>
-                            {images_links.map((link) => {
+                    <div className={styles.scroll_container} >
+                        <span className={styles.arrow_left} id='left'>
+                            <IoMdArrowRoundBack/>
+                        </span>
+                        <ul id='scroll'>
+                            {images_links.map((link, index) => {
                                 return (
-                                    <li style={{backgroundImage: `url(${link})`}}></li>
+                                    <li key={index}style={{backgroundImage: `url(${link})`}}></li>
                                 )
                             })}
                         </ul>
+                        <span className={styles.arrow_right} id='right'>
+                            <IoMdArrowRoundForward/>
+                        </span>
                     </div>
                 </div>
             </div>

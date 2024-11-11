@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import AnimatedBackground from '../../components/AnimatedBackground/AnimatedBackground'
 import styles from './Gallery.module.scss'
 import { IoMdArrowRoundBack } from "react-icons/io";
@@ -25,6 +25,7 @@ const images_links = [
 
 
 const Gallery = () => {
+    const refSize = useRef(null)
     const [scrollSize, setScrollSize] = useState(null)
 
     useEffect(() => {
@@ -32,8 +33,16 @@ const Gallery = () => {
         const leftBtn = document.getElementById('left')
         const rightBtn = document.getElementById('right')
 
-        setScrollSize(document.getElementById('scroll_block').offsetWidth)
+        if(!refSize.current) return
 
+        const resizeObserver = new ResizeObserver((entries) => {
+            for (let entry of entries) {
+                setScrollSize(entry.contentRect.width)
+                scroll.scrollLeft = 0
+            }
+        })
+
+        
         if (scroll && leftBtn && rightBtn) {
             leftBtn.addEventListener('click', () => {
                 scroll.scrollLeft -= scrollSize
@@ -42,8 +51,10 @@ const Gallery = () => {
                 scroll.scrollLeft += scrollSize
             })
         }
-    }, [scrollSize])
 
+        resizeObserver.observe(refSize.current)
+
+    }, [scrollSize])
 
     return (
         <div className={styles.gallery}>
@@ -52,7 +63,7 @@ const Gallery = () => {
                 <div className={styles.gallery_text}>
                     <p>Более 1000 лет изготавливаем наружную рекламу</p>
                 </div>
-                <div className={styles.gallery_slider} id='scroll_block'>
+                <div className={styles.gallery_slider} id='scroll_block' ref={refSize}>
                     <h2>Наши работы</h2>
                     <div className={styles.scroll_container} >
                         <span className={styles.arrow_left} id='left'>

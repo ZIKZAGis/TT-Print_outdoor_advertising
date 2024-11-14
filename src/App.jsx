@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.scss';
 import Contacts from './sections/Contacts/Contacts';
+import Footer from './sections/Footer/Footer';
 import Gallery from './sections/Gallery/Gallery';
 import Header from './sections/Header/Header';
 import Intro from './sections/Intro/Intro';
@@ -19,9 +20,7 @@ function App() {
         <Contacts/>
       </main>
       <footer>
-        <div className='App_container'>
-          Footer
-        </div>
+        <Footer/>
       </footer>
     </div>
   );

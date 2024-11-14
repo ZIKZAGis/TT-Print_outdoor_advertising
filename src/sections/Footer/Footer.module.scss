@@ -1,0 +1,15 @@
+@import 'src/variables.scss';
+
+.footer {
+    background-color: $main-blue;
+}
+
+.footer_list {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+    a {
+        color: white;
+    }
+}

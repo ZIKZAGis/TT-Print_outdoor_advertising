@@ -4,7 +4,7 @@
     position: relative;
     background-color: $main-blue;
     overflow: hidden;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
 }
 
 .gallery_wrapper {
@@ -13,7 +13,7 @@
     grid-template-columns: 1fr 2fr;
     gap: 30px;
     z-index: 4;
-    padding: 20px;
+    padding: 70px 20px;
 }
 
 .gallery_text {

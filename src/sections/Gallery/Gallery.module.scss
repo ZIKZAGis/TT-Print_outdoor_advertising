@@ -93,6 +93,10 @@
 }
 
 @media (max-width: $tablet) {
+    .gallery {
+        margin-bottom: 30px;
+    }
+
     .gallery_wrapper {
         grid-template-columns: 1fr;
         gap: 15px;

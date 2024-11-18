@@ -69,6 +69,10 @@
 }
 
 @media (max-width: $tablet) {
+    .contacts {
+        margin-bottom: 30px;
+    }
+
     .contacts_wrapper {
         gap: 20px;
         grid-template-columns: 1fr;
@@ -81,14 +85,19 @@
 
 @media (max-width: $mobile) {
     .info {
-        padding: 20px 0;
+        padding: 10px 0;
 
         h2 {
             font-size: clamp(20px, 4vw, 24px);
+            margin-bottom: 15px;
         }
     }
 
     .contacts_list {
+        li {
+            padding: 10px;
+        }
+
         p, a {
             font-size: clamp(16px, 2.5vw, 20px);
             transition: $animation;

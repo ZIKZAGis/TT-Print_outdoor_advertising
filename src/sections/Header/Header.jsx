@@ -1,4 +1,5 @@
 import styles from "./Header.module.scss";
+import logo from "./../../media/logo/logo_white.svg"
 import { SiMaildotru } from "react-icons/si";
 import { FaPhoneAlt } from "react-icons/fa";
 import { useState } from "react";
@@ -18,7 +19,7 @@ const Header = () => {
     return (
         <div className={`${styles.wrapper} App_container`}>
             <div className={styles.logo}>
-                Logo
+                <img src={logo} alt="Логотип ТТ Принт" />
             </div>
             <nav>
                 <div className={`${styles.burger_btn} ${isMenuOpen && styles.burger_btn_open}`} onClick={menuHandler}>

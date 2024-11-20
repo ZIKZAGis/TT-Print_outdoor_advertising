@@ -20,6 +20,10 @@
     margin-right: 100px;
     display: flex;
     align-items: center;
+
+    img {
+        height: 50px;
+    }
 }
 
 .burger_btn {
@@ -86,6 +90,14 @@
 @media (max-width: $tablet) {
     .wrapper > nav {
         width: auto;
+    }
+
+    .logo {
+        height: 50px;
+
+        img {
+            height: 40px;
+        }
     }
 
     .list {

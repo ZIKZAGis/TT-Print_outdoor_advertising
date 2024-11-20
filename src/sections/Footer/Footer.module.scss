@@ -9,7 +9,16 @@
     justify-content: space-between;
     padding: 10px;
 
+    li{
+        display: flex;
+        align-items: center;
+    }
+
     a {
         color: white;
+    }
+
+    img {
+        height: 50px;
     }
 }

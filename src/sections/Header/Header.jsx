@@ -29,16 +29,16 @@ const Header = () => {
                 </div>
                 <ul className={`${styles.list} ${isMenuOpen && styles.list_open}`}>
                     <li>
-                        <a href="#" onClick={closeMenu}>Главная</a>
+                        <a href="#top" onClick={closeMenu}>Главная</a>
                     </li>
                     <li>
-                        <a href="#" onClick={closeMenu}>Услуги</a>
+                        <a href="#services" onClick={closeMenu}>Услуги</a>
                     </li>
                     <li>
-                        <a href="#" onClick={closeMenu}>Портфолио</a>
+                        <a href="#gallery" onClick={closeMenu}>Портфолио</a>
                     </li>
                     <li>
-                        <a href="#" onClick={closeMenu}>Контакты</a>
+                        <a href="#contacts" onClick={closeMenu}>Контакты</a>
                     </li>
                 </ul>
                 <ul className={styles.list_contacts}>

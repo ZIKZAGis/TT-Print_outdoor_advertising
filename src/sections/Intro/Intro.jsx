@@ -3,7 +3,7 @@ import styles from './Intro.module.scss'
 
 const Intro = () => {
     return (
-        <div className={styles.intro}>
+        <div className={styles.intro} id='top'>
             <div className={`${styles.intro_wrapper} App_container`}>
                 <div className={styles.intro_text_block}>
                     <p>Изготавливаем рекламу с 1000 года</p>
@@ -24,7 +24,15 @@ const Intro = () => {
                 </div>
                 <div className={styles.intro_order_block}>
                     <p>Срок изготовления<br/> <span>от 1 рабочего дня!</span></p>
-                    <button>Заказать рекламу</button>
+                    <button className={styles.order_button}>
+                        <p>
+                            Просчитать / Заказать рекламу
+                        </p>
+                        <div className={styles.order_contacts}>
+                            <a href="mailto:mail@mail.ru">mail@mail.ru</a>
+                            <a href="tel:+79994443322">+79994443322</a>
+                        </div>    
+                    </button>
                 </div>
             </div>
             <AnimatedBackground/>

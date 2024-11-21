@@ -2,7 +2,7 @@ import styles from './Contacts.module.scss'
 
 const Contacts = () => {
     return (
-        <div className={`App_container ${styles.contacts}`}>
+        <div className={`App_container ${styles.contacts}`} id='contacts'>
            <div className={styles.contacts_wrapper}>
                 <div className={styles.info}>
                     <div>

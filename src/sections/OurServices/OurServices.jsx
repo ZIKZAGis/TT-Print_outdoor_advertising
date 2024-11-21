@@ -53,7 +53,7 @@ const Services_Arr = [
 
 const OurServices = () => {
     return (
-        <div className={`${styles.our_services} App_container`}>
+        <div className={`${styles.our_services} App_container`} id='services'>
             <h2 className={styles.headline}>Наши Услуги</h2>
             <ul className={styles.services_list}>
                 {Services_Arr.map((item) => {

@@ -12,7 +12,7 @@
     position: relative;
     z-index: 2;
     grid-template-columns: 2fr 1fr;
-    gap: 20px;
+    gap: 10px;
     padding: 120px 15px;
 }
 
@@ -78,7 +78,7 @@
 .intro_order_block {
     background-color: darken($main-blue, 10%);
     border-radius: 10px;
-    padding: 40px;
+    padding: 30px;
     height: fit-content;
 
     p {
@@ -91,23 +91,84 @@
         }
     }
 
-    button {
-        padding: 15px;
+    .order_button {
+        position: relative;
+        min-height: 72px;
+        width: 100%;
         border: none;
         border-radius: 5px;
         background-color: $bt_red;
-        color: white;
-        font-size: 18px;
-        font-weight: bold;
-        text-transform: uppercase;
         cursor: pointer;
         transition: $animation;
+        overflow: hidden;
 
-        &:hover {
+        p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            top: 0;
+            padding: 15px;
+            left: 0;
+            margin-bottom: 0;
+            transition: $animation;
+        }
+
+        .order_contacts {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            position: absolute;
+            bottom: -100%;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            transition: $animation;
+            padding: 15px;
+
+            &::after {
+                display: block;
+                position: absolute;
+                content: '';
+                right: 50%;
+                top: 50%;
+                transform: translate(calc(-50% + 1px), -50%);
+                height: 70%;
+                width: 1px;
+                background-color: white;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                width: fit-content;
+                margin: 0 auto;
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+
+        &:hover,
+        &:focus {
             background-color: darken($bt_red, 20%);
+
+            p {
+                top: -100%;
+            }
+
+            .order_contacts {
+                bottom: 0;
+            }
         }
     }
 }
+
+
 
 @media (max-width: $tablet) {
     .intro {
@@ -136,11 +197,6 @@
             margin-bottom: 40px;
         }
     }
-
-    .intro_order_block {
-        width: fit-content;
-        margin: 0 auto;
-    }
 }
 
 @media (max-width: $mobile) {
@@ -162,6 +218,14 @@
 
     .intro_order_block {
         width: 100%;
+
+        .order_button {
+            .order_contacts {
+                a {
+                    font-size: clamp(13px, 3vw, 18px);
+                }
+            }
+        }
     }
 
     .variable_text_block {

@@ -50,7 +50,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: $main-blue;
+            color: $bt_red;
             cursor: pointer;
             position: absolute;
             font-size: 32px;
@@ -62,11 +62,11 @@
         }
 
         .arrow_right {
-            right: 10px;
+            right: 0;
         }
 
         .arrow_left {
-            left: 10px;
+            left: 0;
         }
     }
 

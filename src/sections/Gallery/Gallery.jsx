@@ -57,7 +57,7 @@ const Gallery = () => {
     }, [scrollSize])
 
     return (
-        <div className={styles.gallery}>
+        <div className={styles.gallery} id='gallery'>
             <AnimatedBackground/>
             <div className={`${styles.gallery_wrapper} App_container`}>
                 <div className={styles.gallery_text}>

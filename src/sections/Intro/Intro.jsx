@@ -26,7 +26,7 @@ const Intro = () => {
                     <p>Срок изготовления<br/> <span>от 1 рабочего дня!</span></p>
                     <button className={styles.order_button}>
                         <p>
-                            Просчитать / Заказать рекламу
+                            Просчитать / Заказать
                         </p>
                         <div className={styles.order_contacts}>
                             <a href="mailto:mail@mail.ru">mail@mail.ru</a>

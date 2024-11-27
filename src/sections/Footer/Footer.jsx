@@ -9,8 +9,8 @@ const Footer = () => {
                     <li>
                         <img src={logo} alt="Логотип ТТ Принт" />
                     </li>
-                    <li><a href="mailto:mail@mail.ru">mail@mail.ru</a></li>
-                    <li><a href="tel:+79994443322">+79994443322</a></li>
+                    <li><a href="mailto:ttprintnr@ya.ru">ttprintnr@ya.ru</a></li>
+                    <li><a href="tel:+79646460969">+7(964)646-09-69</a></li>
                 </ul>
             </div>
         </div>

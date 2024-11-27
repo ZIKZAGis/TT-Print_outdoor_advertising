@@ -43,16 +43,16 @@ const Header = () => {
                 </ul>
                 <ul className={styles.list_contacts}>
                     <li>
-                        <a href="mailto:mail@mail.ru">
+                        <a href="mailto:TTPrintNR@ya.ru">
                             <SiMaildotru/>
-                            <p>mail@mail.ru</p>
+                            <p>ttprintnr@ya.ru</p>
                         </a>
                     </li>
                     <li>
                         
-                        <a href="tel:+79994443322">
+                        <a href="tel:+79646460969">
                             <FaPhoneAlt/>
-                            <p>+79994443322</p>
+                            <p>+7(964)646-09-69</p>
                         </a>
                     </li>
                 </ul>                

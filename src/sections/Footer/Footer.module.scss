@@ -16,6 +16,12 @@
 
     a {
         color: white;
+        transition: $animation;
+
+        &:hover,
+        &:focus {
+            color: $bt_red;
+        }
     }
 
     img {

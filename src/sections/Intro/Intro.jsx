@@ -6,7 +6,7 @@ const Intro = () => {
         <div className={styles.intro} id='top'>
             <div className={`${styles.intro_wrapper} App_container`}>
                 <div className={styles.intro_text_block}>
-                    <p>Изготавливаем рекламу с 1000 года</p>
+                    <p>Изготавливаем рекламу с 2010 года</p>
                     <h1>Наружная реклама<br/> по всей Москве</h1>
                     <div className={styles.variable_text_block}>
                         <p className={styles.intro_static}>Изготавливаем</p>
@@ -29,8 +29,8 @@ const Intro = () => {
                             Просчитать / Заказать
                         </p>
                         <div className={styles.order_contacts}>
-                            <a href="mailto:mail@mail.ru">mail@mail.ru</a>
-                            <a href="tel:+79994443322">+79994443322</a>
+                            <a href="mailto:ttprintnr@ya.ru">ttprintnr@ya.ru</a>
+                            <a href="tel:+79646460969">+79646460969</a>
                         </div>    
                     </button>
                 </div>

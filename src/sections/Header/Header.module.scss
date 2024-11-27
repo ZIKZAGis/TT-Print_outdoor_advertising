@@ -5,7 +5,6 @@
     justify-content: space-between;
     padding: 0 15px;
     font-weight: bold;
-    text-transform: uppercase;
     border-bottom: 2px solid lighten($main-blue, 20%);
 
     > nav {
@@ -68,6 +67,7 @@
     > li {
         display: flex;
         align-items: center;
+        width: max-content;
     }
 
     a {

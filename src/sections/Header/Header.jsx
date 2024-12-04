@@ -19,7 +19,9 @@ const Header = () => {
     return (
         <div className={`${styles.wrapper} App_container`}>
             <div className={styles.logo}>
-                <img src={logo} alt="Логотип ТТ Принт" />
+                <a href="#top">
+                    <img src={logo} alt="Логотип ТТ Принт" />
+                </a>
             </div>
             <nav>
                 <div className={`${styles.burger_btn} ${isMenuOpen && styles.burger_btn_open}`} onClick={menuHandler}>
@@ -28,9 +30,6 @@ const Header = () => {
                     </div>
                 </div>
                 <ul className={`${styles.list} ${isMenuOpen && styles.list_open}`}>
-                    <li>
-                        <a href="#top" onClick={closeMenu}>Главная</a>
-                    </li>
                     <li>
                         <a href="#services" onClick={closeMenu}>Услуги</a>
                     </li>

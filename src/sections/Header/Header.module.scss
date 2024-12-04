@@ -15,10 +15,14 @@
 }
 
 .logo {
-    color: white;
-    margin-right: 100px;
-    display: flex;
-    align-items: center;
+    a {
+        color: white;
+        margin-right: 100px;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
 
     img {
         height: 50px;

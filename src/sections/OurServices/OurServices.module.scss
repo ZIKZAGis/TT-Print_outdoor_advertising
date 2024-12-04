@@ -59,8 +59,17 @@
 }
 
 .detailing_list {
+    list-style: initial;
     font-size: clamp(14px, 1.2vw, 18px);
     font-weight: 400;
+    margin-left: 10px;
+
+    li {
+        margin-bottom: 10px;
+        &::marker {
+            color: $main-orange;
+        }
+    }
 }
 
 .clarification {

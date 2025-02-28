@@ -3,7 +3,7 @@ const services_Arr = [
         id: '1',
         img: "https://wowbanner.ru/sites/default/files/intpechat1.jpg",
         title: 'Широкоформатная печать',
-        price: 'от 400р/м2',
+        price: 'от 350р/м2',
         detailing: [
             'Баннер литой 360dpi - 450р/м2',
             'Баннер литой 720dpi - 550р/м2',
@@ -18,7 +18,7 @@ const services_Arr = [
         id: '2',
         img: "/images/our_services/inter_pechat.jpg",
         title: 'Интерьерная печать',
-        price: 'от 500р/м2',
+        price: 'от 600р/м2',
         detailing: [
             'Баннер литой 1440dpi - 700р/м2',
             'Баннер ламинированный 1440dpi - 600р/м2',
@@ -47,7 +47,7 @@ const services_Arr = [
         id: '4',
         img: "/images/our_services/viveska.jpg",
         title: 'Вывески',
-        price: 'от 6000р/м2',
+        price: 'от 6500р/м2',
         detailing: [
             'Световой короб поликарбонатный - 15000р/м2',
             'Световой короб баннерный - 18000р/м2',
@@ -60,7 +60,7 @@ const services_Arr = [
         id: '5',
         img: "https://www.svetogor.com/images/bukvy3.jpg",
         title: 'Объёмные буквы',
-        price: 'от 30р/см',
+        price: 'от 40р/см',
         detailing: [
             'Буквы из пвх 5мм - 40р/см',
             'Буквы из пвх 8мм - 50р/см',
@@ -74,7 +74,7 @@ const services_Arr = [
         id: '6',
         img: "/images/our_services/freza.jpg",
         title: 'Фрезеровка',
-        price: 'от 45р/мп',
+        price: 'от 50р/мп',
         detailing: [
             'Фрезеровка нашего материала (пвх) - 50р/мп',
             'Фрезеровка нашего материала (композит) - 80р/мп',
@@ -87,7 +87,7 @@ const services_Arr = [
         id: '7',
         img: "https://www.tpml.ru/sites/default/files/styles/845x50/public/product_kartinki/plotter-big.jpg?itok=FSdLztIR",
         title: 'Плоттерная резка',
-        price: 'от 900р/м2',
+        price: 'от 1200р/м2',
         detailing: [
             'Белая плёнка - 1200р/м2',
             'Цветная плёнка - 1500/м2',

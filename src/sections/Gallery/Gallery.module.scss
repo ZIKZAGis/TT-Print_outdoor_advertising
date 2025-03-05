@@ -137,5 +137,9 @@
         h2 {
             font-size: clamp(20px, 4vw, 24px);
         }
+
+        ul > li {
+            height: 300px;
+        }
     }
 }

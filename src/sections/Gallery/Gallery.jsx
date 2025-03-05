@@ -42,7 +42,7 @@ const Gallery = () => {
             <AnimatedBackground/>
             <div className={`${styles.gallery_wrapper} App_container`}>
                 <div className={styles.gallery_text}>
-                    <p>Более 1000 лет изготавливаем наружную рекламу</p>
+                    <p>Более 15 лет изготавливаем наружную рекламу</p>
                 </div>
                 <div className={styles.gallery_slider} id='scroll_block' ref={refSize}>
                     <h2>Наши работы</h2>

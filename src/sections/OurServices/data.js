@@ -1,7 +1,7 @@
 const services_Arr = [
     {
         id: '1',
-        img: "https://wowbanner.ru/sites/default/files/intpechat1.jpg",
+        img: "/images/our_services/shirka.webp",
         title: 'Широкоформатная печать',
         price: 'от 350р/м2',
         detailing: [
@@ -16,7 +16,7 @@ const services_Arr = [
     },
     {
         id: '2',
-        img: "/images/our_services/inter_pechat.jpg",
+        img: "/images/our_services/intererka.webp",
         title: 'Интерьерная печать',
         price: 'от 600р/м2',
         detailing: [
@@ -31,7 +31,7 @@ const services_Arr = [
     },
     {
         id: '3',
-        img: "https://adv-f1.ru/wp-content/uploads/2019/01/tabl1.jpg",
+        img: "/images/our_services/tablichka.webp",
         title: 'Таблички',
         price: 'от 3000р/м2',
         detailing: [
@@ -45,7 +45,7 @@ const services_Arr = [
     },
     {
         id: '4',
-        img: "/images/our_services/viveska.jpg",
+        img: "/images/our_services/viveska.webp",
         title: 'Вывески',
         price: 'от 6500р/м2',
         detailing: [
@@ -58,7 +58,7 @@ const services_Arr = [
     },
     {
         id: '5',
-        img: "https://www.svetogor.com/images/bukvy3.jpg",
+        img: "/images/our_services/bukvi.webp",
         title: 'Объёмные буквы',
         price: 'от 40р/см',
         detailing: [
@@ -72,7 +72,7 @@ const services_Arr = [
     },
     {
         id: '6',
-        img: "/images/our_services/freza.jpg",
+        img: "/images/our_services/freza.webp",
         title: 'Фрезеровка',
         price: 'от 50р/мп',
         detailing: [
@@ -86,7 +86,7 @@ const services_Arr = [
     },
     {
         id: '7',
-        img: "https://www.tpml.ru/sites/default/files/styles/845x50/public/product_kartinki/plotter-big.jpg?itok=FSdLztIR",
+        img: "/images/our_services/plotter.webp",
         title: 'Плоттерная резка',
         price: 'от 1200р/м2',
         detailing: [
@@ -99,7 +99,7 @@ const services_Arr = [
     },
     {
         id: '8',
-        img: "https://mk-monteko.ru/gallery/photos-slides-fullsize/5ac0ff3b5ae37_IMG_2895.JPG",
+        img: "/images/our_services/rama.webp",
         title: 'Сварные конструкции',
         price: 'индивидуальный просчёт',
         detailing: [
@@ -108,7 +108,7 @@ const services_Arr = [
     },
     {
         id: '9',
-        img: "https://optima-fasad.ru/wp-content/uploads/2022/08/%D0%9C%D0%BE%D0%BD%D1%82%D0%B0%D0%B6-%D0%B2%D1%8B%D0%B2%D0%B5%D1%81%D0%BA%D0%B8-%D1%84%D0%B0%D1%81%D0%B0%D0%B4%D0%B0.jpg",
+        img: "/images/our_services/monaj.webp",
         title: 'Монтажные работы',
         price: 'индивидуальный просчёт',
         detailing: [
@@ -117,7 +117,7 @@ const services_Arr = [
     },
     {
         id: '10',
-        img: "https://www.stroyportal.ru/media/cache/companies/97508/products/682426680/e8f316ac-a1af-44b2-aea2-697966e9eacf_image_large.jpg",
+        img: "/images/our_services/avto.webp",
         title: 'Реклама на авто',
         price: 'от 1250р/м2',
         detailing: [
@@ -129,11 +129,44 @@ const services_Arr = [
 ]
 
 const images_links = [
-    '/images/our_work/photo_1.jpeg',
-    '/images/our_work/photo_2.jpeg',
-    '/images/our_work/photo_3.jpeg',
-    '/images/our_work/photo_4.jpeg',
-    '/images/our_work/photo_5.jpeg',
+    '/images/our_work/photo_1.webp',
+    '/images/our_work/photo_2.webp',
+    '/images/our_work/photo_3.webp',
+    '/images/our_work/photo_4.webp',
+    '/images/our_work/photo_5.webp',
+    '/images/our_work/photo_6.webp',
+    '/images/our_work/photo_7.webp',
+    '/images/our_work/photo_8.webp',
+    '/images/our_work/photo_9.webp',
+    '/images/our_work/photo_10.webp',
+    '/images/our_work/photo_11.webp',
+    '/images/our_work/photo_12.webp',
+    '/images/our_work/photo_13.webp',
+    '/images/our_work/photo_14.webp',
+    '/images/our_work/photo_15.webp',
+    '/images/our_work/photo_16.webp',
+    '/images/our_work/photo_17.webp',
+    '/images/our_work/photo_18.webp',
+    '/images/our_work/photo_19.webp',
+    '/images/our_work/photo_20.webp',
+    '/images/our_work/photo_21.webp',
+    '/images/our_work/photo_22.webp',
+    '/images/our_work/photo_23.webp',
+    '/images/our_work/photo_24.webp',
+    '/images/our_work/photo_25.webp',
+    '/images/our_work/photo_26.webp',
+    '/images/our_work/photo_27.webp',
+    '/images/our_work/photo_28.webp',
+    '/images/our_work/photo_29.webp',
+    '/images/our_work/photo_30.webp',
+    '/images/our_work/photo_31.webp',
+    '/images/our_work/photo_32.webp',
+    '/images/our_work/photo_33.webp',
+    '/images/our_work/photo_34.webp',
+    '/images/our_work/photo_35.webp',
+    '/images/our_work/photo_36.webp',
+    '/images/our_work/photo_37.webp',
+    '/images/our_work/photo_38.webp',
 ]
 
 

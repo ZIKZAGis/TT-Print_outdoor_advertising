@@ -108,7 +108,7 @@ const services_Arr = [
     },
     {
         id: '9',
-        img: "/images/our_services/monaj.webp",
+        img: "/images/our_services/montaj.webp",
         title: 'Монтажные работы',
         price: 'индивидуальный просчёт',
         detailing: [
@@ -167,6 +167,7 @@ const images_links = [
     '/images/our_work/photo_36.webp',
     '/images/our_work/photo_37.webp',
     '/images/our_work/photo_38.webp',
+    '/images/our_work/photo_39.webp',
 ]
 
 

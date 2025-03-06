@@ -23,14 +23,30 @@ const Gallery = () => {
             }
         })
 
-        
         if (scroll && leftBtn && rightBtn) {
+            let isThrottled = false;
+        
             leftBtn.addEventListener('click', () => {
-                scroll.scrollLeft -= scrollSize
-            })
+                if (!isThrottled) {
+                    scroll.scrollLeft -= scrollSize;
+                    isThrottled = true;
+        
+                    setTimeout(() => {
+                        isThrottled = false;
+                    }, 1500);
+                }
+            });
+        
             rightBtn.addEventListener('click', () => {
-                scroll.scrollLeft += scrollSize
-            })
+                if (!isThrottled) { 
+                    scroll.scrollLeft += scrollSize;
+                    isThrottled = true; 
+        
+                    setTimeout(() => {
+                        isThrottled = false; 
+                    }, 1500);
+                }
+            });
         }
 
         resizeObserver.observe(refSize.current)

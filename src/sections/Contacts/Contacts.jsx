@@ -10,7 +10,7 @@ const Contacts = () => {
                         <ul className={styles.contacts_list}>
                             <li>
                                 <p>Адрес:</p>
-                                <address>1-я Фрезерная улица, 2/1с21<br/></address>
+                                <address>Подольск, Московская область, Профсоюзная улица, 12ст1<br/></address>
                             </li>
                             <li>
                                 <p>График работы:</p>
@@ -29,12 +29,19 @@ const Contacts = () => {
                 </div>
                 <div className={styles.map}>
                     <div style={{position:'relative', overflow:'hidden'}}>
+                        <a href="https://yandex.ru/navi/10747/podolsk/?utm_medium=mapframe&utm_source=maps" style={{color:'#eee', fontSize:'12px', position:'absolute', top:0}}>Подольск</a>
+                        <a href="https://yandex.ru/navi/10747/podolsk/?ll=37.550574%2C55.465417&mode=whatshere&utm_medium=mapframe&utm_source=maps&whatshere%5Bpoint%5D=37.550394%2C55.465362&whatshere%5Bzoom%5D=21&z=19" style={{color:'#eee', fontSize:'12px', position:'absolute', top:'14px'}}>
+                            Яндекс Карты — транспорт, навигация, поиск мест
+                        </a>
+                        <iframe src="https://yandex.ru/map-widget/v1/?ll=37.550574%2C55.465417&mode=whatshere&whatshere%5Bpoint%5D=37.550394%2C55.465362&whatshere%5Bzoom%5D=21&z=19" width="560" height="400" frameborder="1" allowfullscreen="true" style={{position:'relative', width:'100%', height: '400px', border:'none', borderRadius: '10px'}}></iframe>
+                    </div>
+                    {/* <div style={{position:'relative', overflow:'hidden'}}>
                         <a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style={{color:'#eee', fontSize:'12px', position:'absolute', top:0}}>Москва</a>
                         <a href="https://yandex.ru/maps/213/moscow/house/1_ya_frezernaya_ulitsa_2_1s21/Z04YcQNiS0EGQFtvfXt1cHllZQ==/?ll=37.741882%2C55.741446&utm_medium=mapframe&utm_source=maps&z=19.01" style={{color:'#eee', fontSize:'12px', position:'absolute', top:'14px'}}>
                             1-я Фрезерная улица, 2/1с21 — Яндекс Карты
                         </a>
                         <iframe src="https://yandex.ru/map-widget/v1/?ll=37.741882%2C55.741446&mode=whatshere&whatshere%5Bpoint%5D=37.742161%2C55.741675&whatshere%5Bzoom%5D=17&z=19.01" width="560" height="400" frameborder="1" allowfullscreen="true" style={{position:'relative', width:'100%', height: '400px', border:'none', borderRadius: '10px'}}></iframe>
-                    </div>
+                    </div> */}
                 </div>
            </div>
         </div>
